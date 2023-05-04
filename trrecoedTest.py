@@ -13,10 +13,10 @@ _NUM_TEST = 500
 _RANDOM_SEED = 0
 
 #数据集路径
-DATASET_DIR = "D:/Tensorflow/captcha/images/"
+DATASET_DIR = "/Users/haitao/Desktop/CNN/captcha/images/"
 
 #tfrecord文件存放路径
-TFRECORD_DIR = "D:/Tensorflow/captcha/"
+TFRECORD_DIR = "/Users/haitao/Desktop/CNN/captcha/"
 
 
 #判断tfrecord文件是否存在

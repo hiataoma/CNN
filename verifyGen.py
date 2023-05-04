@@ -31,7 +31,8 @@ def gen_captcha_text_and_image():
     #生成验证码
     captcha = image.generate(captcha_text)
     #文件存入的位置以及文件的标注
-    image.write(captcha_text, 'D:/Tensorflow/captcha/images/' + captcha_text + '.jpg')  #
+    # 文件异常做判断处理
+    image.write(captcha_text, '/Users/haitao/Desktop/CNN/captcha/images/' + captcha_text + '.jpg')  #
 
 #数量少于10000，因为重名
 num = 10000
@@ -42,5 +43,4 @@ if __name__ == '__main__':
         sys.stdout.flush()
     sys.stdout.write('\n')
     sys.stdout.flush()
-                        
     print("生成完毕")
